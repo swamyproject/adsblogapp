@@ -1,0 +1,12 @@
+{%extends 'blogapp/base.html'%}
+{%block title_block%}PYTHON BLOG{%endblock%}
+    {%block content_block%}
+    <div class='ads' class="container" align="center">
+    <h2> LOGIN FORM</h2>
+    <form method="POST">
+        {{form.as_p}}
+        {%csrf_token%}
+        <input type="submit" name="" class='btn btn-lg btn-primary'value="login">
+    </form>
+        </div>
+    {%endblock%}
