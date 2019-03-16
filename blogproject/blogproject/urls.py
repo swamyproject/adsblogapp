@@ -23,5 +23,8 @@ urlpatterns = [
     url(r'^logout/', views.logout_view),
     url(r'^python/', views.python_blog_view),
     url(r'^signup/', views.signup_form_view),
+    url(r'^blog/', views.home_page_blog_view),
+    url(r'^detai/', views.detailview),
+    url(r'^(?P<year>\d{4})/(?P<month>\d{2})/(?P<day>\d{2})/(?P<post>[-\w]+)/$', views.detailview,name='pdetail'),
 
 ]

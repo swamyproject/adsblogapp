@@ -1,0 +1,23 @@
+{%extends 'blogapp/base.html'%}
+{%block title_block%}BLOG CONTENT{%endblock%}
+
+    {%block content_block%}
+<div class="content">
+<div class="container" >
+    {%for postt in posts%}
+    <a id="b" href="{{detail.get_obsolute_url}}"> <h2>{{postt.title}}</h2></a>
+        <p id="y">publish on {{postt.publish}} Author  {{postt.author}}  {{postt.status}}  </p>
+    <p id="c">{{postt.body}}</p>
+
+    {%endfor%}
+    <div class="container" align="center">
+    <h3>{%include 'blogapp/pagination.html' with page=posts%}<h3>
+</div>
+</div>
+</div>
+<div class="sidebar">
+    <div class="container ">
+<h3>Blog posts</h3>
+        </div>
+</div>
+    {%endblock%}

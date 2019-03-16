@@ -1,0 +1,7 @@
+{%extends 'blogapp/base.html'%}
+{%block title_block%}PYTHON BLOG{%endblock%}
+    {%block content_block%}
+    {%for det in detail%}
+        {{det.body}}
+{%endfor%}
+    {%endblock%}

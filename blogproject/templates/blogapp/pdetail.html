@@ -1,0 +1,15 @@
+{%extends 'blogapp/base.html'%}
+{%block title_block%}{{pdetail.title}}{%endblock%}
+
+    {%block content_block%}
+
+<div class="container" >
+
+    <h2>{{postt.title}}<h2>
+        <p id="y">publish on {{pdetail.publish}} Author  {{pdetail.author}}  {{pdetail.status}}</p>
+    <p id="c">{{pdetail.body}}</p>
+
+
+</div>
+
+{%endblock%}
