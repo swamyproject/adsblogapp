@@ -5,8 +5,8 @@ from django.http import HttpResponse
 from django.core.paginator import Paginator,PageNotAnInteger,EmptyPage
 # Create your views here.
 def home_page_view(request):
-    return render(request,'blogapp/base.html')
-@login_required
+    return render(request,'blogapp/pythonblog.html')
+
 def python_blog_view(request):
     return render(request,'blogapp/pythonblog.html')
 def logout_view(request):
